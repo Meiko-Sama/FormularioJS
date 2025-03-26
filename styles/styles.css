@@ -303,10 +303,10 @@ body {
 
 /* Responsividade da tela */
 
-@media (max-width: 1020px) {
+@media (max-width: 850px) {
   body {
     height: 100vh;
-    background-color: #224a1e;
+    background-color: #b1fffe;
 
     display: flex;
     justify-content: center;
@@ -327,5 +327,218 @@ body {
   .imagem_container p {
     font-family: "Copperplate";
     font-size: 11px;
+  }
+
+  .cloud {
+    position: absolute;
+
+    width: 200px;
+    height: 150px;
+
+    background: url(../img/nuvem.png) center / cover no-repeat;
+    filter: drop-shadow(2px 2px 20px #e3eed4);
+  }
+
+  .cloud:nth-child(1) {
+    z-index: 1000;
+
+    top: 1%;
+    left: -11%;
+  }
+
+  .cloud:nth-child(2) {
+    z-index: 3000;
+
+    top: 0%;
+    left: 11%;
+  }
+
+  .cloud:nth-child(3) {
+    z-index: 3000;
+
+    top: 3.5%;
+    left: -2%;
+  }
+
+  .rain {
+    background-color: #e3eed4;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+
+    box-shadow: inset -25px 10px 0px -10px #fefefe;
+
+    position: absolute;
+    top: 90px;
+
+    z-index: 1000;
+
+    transform-origin: bottom;
+    animation: animate 2s linear infinite;
+  }
+
+  .rain {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    background-color: #d9ff00;
+  }
+  .imagem_container h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+
+  .imagem_container p {
+    font-size: 14px;
+  }
+
+  .cloud {
+    width: 200px;
+    height: 100px;
+  }
+
+  .cloud:nth-child(1) {
+    z-index: 1000;
+    top: 1%;
+    left: -8%;
+  }
+
+  .cloud:nth-child(2) {
+    z-index: 3000;
+    top: 1%;
+    left: 11%;
+  }
+
+  .cloud:nth-child(3) {
+    z-index: 3000;
+    top: 5.5%;
+    left: -2%;
+  }
+
+  .container {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+  }
+
+  #cadastro {
+    gap: 16px;
+    width: 90%;
+  }
+
+  #cadastro h1 {
+    font-size: 20px;
+  }
+
+  #cadastro p {
+    font-size: 8px;
+  }
+  #cadastro .input_data input {
+    font-size: 10px;
+    margin-top: -2px;
+    height: 26px;
+  }
+
+  #cadastro .input_data label {
+    font-size: 9px;
+  }
+
+  #cadastro .btnArea {
+    width: 80%;
+  }
+
+  .rain {
+    display: none;
+  }
+
+  .btnArea {
+    position: relative;
+    z-index: 8000;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: #df20e6;
+  }
+
+  .imagem_container h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+  }
+  .imagem_container p {
+    font-size: 15px;
+    padding-right: 10px;
+  }
+
+  .cloud {
+    width: 200px;
+    height: 100px;
+  }
+
+  .cloud:nth-child(1) {
+    z-index: 1000;
+    top: 0%;
+    left: -12%;
+  }
+  .cloud:nth-child(2) {
+    top: 1%;
+    left: 17%;
+  }
+
+  .cloud:nth-child(3) {
+    top: 5.5%;
+    left: -1%;
+  }
+
+  .container {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+  }
+
+  #cadastro {
+    gap: 16px;
+  }
+
+  #cadastro h1 {
+    font-size: 20px;
+  }
+
+  #cadastro p {
+    font-size: 8px;
+  }
+  #cadastro .input_data input {
+    font-size: 10px;
+    margin-top: -2px;
+    height: 26px;
+  }
+
+  #cadastro .input_data label {
+    font-size: 9px;
+  }
+
+  #cadastro .btnArea {
+    width: 80%;
+  }
+
+  .rain {
+    display: none;
+  }
+
+  .btnArea {
+    position: relative;
+    z-index: 8000;
   }
 }
