@@ -319,4 +319,13 @@ body {
     z-index: 2;
     color: #e3eed4;
   }
+
+  .imagem_container h1 {
+    font-family: "JoseFins";
+    font-size: 30px;
+  }
+  .imagem_container p {
+    font-family: "Copperplate";
+    font-size: 11px;
+  }
 }
